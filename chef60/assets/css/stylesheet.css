@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navigation bar */
+.nav {
+    background-color: #333;
+    color: white;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style the logo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style the home text */
+.home_text {
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.home_text h2 {
+    font-size: 24px;
+}
+
+.home_text p {
+    font-size: 16px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* about */
+.about_text {
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.about_text h2 {
+    font-size: 24px;
+}
+
+.about_text p {
+    font-size: 16px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/*menu.php styling*/
+.menu_wrapper {
+    text-align: center; /* Center-align the content within the wrapper */
+    padding: 20px 100px;
+}
+
+.menu_text {
+    text-align: center; /* Center-align the text */
+    padding: 20px 100px;
+    padding-bottom: 20px;
+}
+
+.menu_items {
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: space-between; /* Distribute items evenly horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    margin-top: 20px;
+}
+
+/* Style each menu item */
+.menu_items .item1,
+.menu_items .item2,
+.menu_items .item3,
+.menu_items .item4 {
+    width: calc(25% - 20px); /* Set the width for each item (25% to create 4 items in a row) */
+    margin: 10px; /* Add some spacing between items */
+    text-align: center;
+    background-color: #f9f9f9; /* Background color for each item */
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+.menu_items h3 {
+    margin-top: 0px;
+}
+
+.menu_items p {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.menu_items button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
