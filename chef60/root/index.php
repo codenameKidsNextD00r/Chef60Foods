@@ -13,6 +13,10 @@
 </head>
 <body>
     <nav class="nav">
+    <ul class="login">
+        <li><a href="login.php">Log In</a></li>
+        <li><a href="register.php">Register</a></li>
+    </ul>
     <ul>
         <li><a href="index.php">home</a></li>
         <li><a href="about.php">about</a></li>
