@@ -1,173 +1,245 @@
-body {
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li, button {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-/* Style the navigation bar */
+/* Set a common background color with a subtle gradient */
+body {
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Navigation bar styles with a gradient background and box shadow */
 .nav {
-    background-color: #333;
+    background: linear-gradient(90deg, #333, #111);
     color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
 }
 
+/* Align the logo and navigation elements */
 .nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end; /* Align navigation items to the right */
 }
 
+/* Styles for navigation list items */
 .nav li {
-    display: inline-block;
     padding: 10px;
 }
 
+/* Styles for navigation links */
 .nav a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-/* Style the logo */
-.logo img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+/* Change link color on hover */
+.nav a:hover {
+    color: #ffaa00;
 }
 
-/* Style the home text */
+/* Header styles with a gradient background, rounded corners, and padding */
 .home_text {
     text-align: center;
-    padding: 20px 100px;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffaa00, #ff8800);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Text styles within the header */
 .home_text h2 {
-    font-size: 24px;
+    font-size: 32px;
+    color: #333;
 }
 
+/* Text styles within the header */
 .home_text p {
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 auto;
     padding-bottom: 20px;
+    color: #555;
 }
 
-button {
-    background-color: #333;
-    color: white;
+/* Home page background image */
+.home-page {
+    background-image: url('C:\xampp\htdocs\Chef60Foods-main\chef60\assets\imgaes\Homebg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    /* Your other styles for the home page here */
+}
+
+/* Common button styles with a gradient background and hover effect */
+.button {
+    background: linear-gradient(90deg, #ff5100a1, #ffaa00);
+    color: #856d1e;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 30px;
+    font-size: 18px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
-button a {
-    color: white;
+/* Styles for button links */
+.button a {
+    color: rgb(189, 26, 26);
     text-decoration: none;
 }
 
-/* about */
+/* Change button background on hover */
+.button:hover {
+    background: linear-gradient(90deg, #ffaa00, #ffcc00);
+}
+
+/* About text styles with a gradient background and padding */
 .about_text {
     text-align: center;
-    padding: 20px 100px;
-}
-
-.about_text h2 {
-    font-size: 24px;
-}
-
-.about_text p {
-    font-size: 16px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
-/*menu.php styling*/
-.menu_wrapper {
-    text-align: center; /* Center-align the content within the wrapper */
-    padding: 20px 100px;
-}
-
-.menu_text {
-    text-align: center; /* Center-align the text */
-    padding: 20px 100px;
-    padding-bottom: 20px;
-}
-
-.menu_items {
-    display: flex; /* Use flexbox to create a horizontal layout */
-    justify-content: space-between; /* Distribute items evenly horizontally */
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
-    margin-top: 20px;
-}
-
-/* Style each menu item */
-.menu_items .item1,
-.menu_items .item2,
-.menu_items .item3,
-.menu_items .item4 {
-    width: calc(25% - 20px); /* Set the width for each item (25% to create 4 items in a row) */
-    margin: 10px; /* Add some spacing between items */
-    text-align: center;
-    background-color: #f9f9f9; /* Background color for each item */
-    padding: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
-}
-
-.menu_items h3 {
-    margin-top: 0px;
-}
-
-.menu_items p {
-    font-size: 16px;
-    margin: 0 auto;
-}
-
-.menu_items button {
-    background-color: #333;
+    padding: 40px;
+    background: linear-gradient(135deg, #8B4513, #654321);
     color: white;
-    border: none;
-    padding: 5px 10px;
-    font-size: 14px;
-    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-body.login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
+/* Text styles within the about section */
+.about_text h2 {
+    font-size: 32px;
+    color: #ffaa00;
+}
 
-.form-container {
+/* Text styles within the about section */
+about_text p {
+    font-size: 18px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    color: #eee;
+}
+
+/* Menu styles */
+.menu_wrapper {
     text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Text styles for menu headings */
+.menu_text h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+/* Text styles for menu paragraphs */
+.menu_text p {
+    font-size: 18px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Style each menu item with a subtle box shadow and hover effect */
+.menu_items .item {
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: white;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+/* Change box shadow on menu item hover */
+.menu_items .item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Text styles for menu item headings */
+.menu_items h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Text styles for menu item paragraphs */
+menu_items p {
+    font-size: 18px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Reservation page styles */
+.reservation-page {
+    /* Background and other styles for the reservation page */
+    background: linear-gradient(135deg, #ffaa00, #ff8800);
+    color: white;
+}
+
+/* Styles for the reservation form container */
+.reservation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Text styles for reservation form headings */
+.reservation-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+
+/* Style for reservation form labels */
+.reservation-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Style for reservation form inputs and text areas */
+.reservation-form input,
+.reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px; /* You can adjust the max width as needed */
-  }
-  
-  .form-container h2 {
-    margin: 0;
-  }
-  
-  .form-container p {
-    margin: 10px 0;
-  }
+}
 
-  .form-container input{
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+/* Style for the reservation form submit button */
+.reservation-form button {
+    background: linear-gradient(90deg, #ff8800, #ffaa00);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
     margin-top: 10px;
-  }
-  
-  #loginForm {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #loginButton {
-    margin-top: 10px;
-  }
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Change button background on button hover */
+.reservation-form button:hover {
+    background: linear-gradient(90deg, #ffaa00, #ffcc00);
+}
+
+/* Add any additional styles you need for the reservation form and page */
+
+/* Add more styles for other page-specific elements as needed */
+
+/* Responsive design (media queries) */
+@media screen and (max-width: 768px) {
+    /* Add responsive styles here */
+}
