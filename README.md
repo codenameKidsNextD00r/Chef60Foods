@@ -14,8 +14,11 @@ This repo will act as a backup and central collaboration location for the web ap
     -email service will also be used for registration confirmation 
 
 - CREATE order functionality on menu.php
+    - menu items, descriptions and images need to be added
+    - related tables also need to be created and added (Orders and Items table)     
     - create cart
     - payment handler (PAYGATE API or any other free-to-use or affordable service)
+      
 
 - contact page 
 - database server (Azure might be a viable option)
