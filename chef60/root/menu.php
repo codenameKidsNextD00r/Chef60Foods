@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (isset($_SESSION['email'])) {
+        $email = $_SESSION['email'];
+        $user_id = $_SESSION['uuid'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +19,14 @@
 </head>
 <body>
     <nav class="nav">
+        <ul class="login">
+            <?php if (isset($email)) { ?>
+                <li>Welcome, <?php echo $email; ?> | <a href="../includes/logout.php">Log Out</a></li>
+                <?php } else { ?>
+                    <li><a href="login.php">Log In</a></li>
+                    <li><a href="register.php">Register</a></li>
+            <?php } ?>
+        </ul>
     <ul>
         <li><a href="index.php">home</a></li>
         <li><a href="about.php">about</a></li>
@@ -19,6 +34,7 @@
         <li><a href="reservation.php">reservation</a></li>
         <li><a href="contact.php">contact</a></li>
     </ul>
+    
     </nav>
    
     <div class="menu_wrapper">

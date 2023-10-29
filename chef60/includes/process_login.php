@@ -20,9 +20,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // echo $result;
 
         if ($result && mysqli_num_rows($result) > 0) {
-            echo "Welcome, login was successful";
+            $row = mysqli_fetch_assoc($result);
+            $user_id = $row['uuid'];
+            session_start();
+            $_SESSION['email'] = $email;
+            $_SESSION['uuid'] = $user_id;
+            // echo "Welcome, login was successful";
+            // echo "Your user_id is '".$user_id."'";
+            header("Location: ../root/index.php");
         } else {
-            echo "That user does not exist, login failed";
+            echo "<script>alert('Incorrect email or password. Please try again.'); window.location.href = '../root/login.php';</script>";
         }
     }
 
