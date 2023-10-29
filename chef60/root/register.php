@@ -23,7 +23,7 @@
     <input type="password" id="password_confirm" placeholder="Confirm Password" name="password_confirm" required>
     <button type="submit" id="registerButton" >Create</button>
   </form>
-  <p>If you already have an account click <a href="register.php">here</a> to login.</p>
+  <p>If you already have an account click <a href="login.php">here</a> to login.</p>
 </div>
 
 <!--javascript validation -->
