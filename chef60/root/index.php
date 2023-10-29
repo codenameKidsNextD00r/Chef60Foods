@@ -13,15 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="../assets/css/stylesheet.css">
-
-    <!-- <style>
-        
-    </style> -->
 </head>
 <header>
     <nav class="nav">
         <ul class="login">
-            <!-- Check if the user is logged in and display email or Log In link -->
             <?php if (isset($email)) { ?>
                 <li>Welcome, <?php echo $email; ?> | <a href="../includes/logout.php">Log Out</a></li>
                 <?php } else { ?>

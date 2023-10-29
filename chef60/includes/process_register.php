@@ -39,7 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $result = mysqli_query($conn, $insert_query);
 
-            echo "record inserted successfully";
+            echo "<script>alert('Account created successfully! Please login'); window.location.href = '../root/login.php';</script>";
+
         }
     }
 
