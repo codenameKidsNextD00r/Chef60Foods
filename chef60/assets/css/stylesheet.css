@@ -1,10 +1,11 @@
+/* Reset default styles and set global styles */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Style the navigation bar */
+/* Navigation bar styling */
 .nav {
     background-color: #333;
     color: white;
@@ -27,15 +28,15 @@ body {
     color: white;
 }
 
-/* Style the logo */
+/* Logo styling */
 .logo img {
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* Style the home text */
+/* Home text styling */
 .home_text {
     text-align: center;
     padding: 20px 100px;
@@ -51,8 +52,9 @@ body {
     padding-bottom: 20px;
 }
 
-button {
-    background-color: #333;
+/* Button styling */
+button, .menu_items button, .reservation-container button[type="submit"] {
+    background-color: #e68608;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -65,7 +67,11 @@ button a {
     text-decoration: none;
 }
 
-/* about */
+button:hover, .menu_items button:hover, .reservation-container button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* About section styling */
 .about_text {
     text-align: center;
     padding: 20px 100px;
@@ -81,40 +87,34 @@ button a {
     padding-bottom: 20px;
 }
 
-/*menu.php styling*/
-.menu_wrapper {
-    text-align: center; /* Center-align the content within the wrapper */
-    padding: 20px 100px;
-}
+/* Menu section styling */
 
-.menu_text {
-    text-align: center; /* Center-align the text */
+.menu_wrapper, .menu_text {
+    text-align: center;
     padding: 20px 100px;
-    padding-bottom: 20px;
 }
 
 .menu_items {
-    display: flex; /* Use flexbox to create a horizontal layout */
-    justify-content: space-between; /* Distribute items evenly horizontally */
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
-/* Style each menu item */
 .menu_items .item1,
 .menu_items .item2,
 .menu_items .item3,
 .menu_items .item4 {
-    width: calc(25% - 20px); /* Set the width for each item (25% to create 4 items in a row) */
-    margin: 10px; /* Add some spacing between items */
+    width: calc(25% - 20px);
+    margin: 10px;
     text-align: center;
-    background-color: #f9f9f9; /* Background color for each item */
+    background-color: #f9f9f9;
     padding: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu_items h3 {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .menu_items p {
@@ -123,21 +123,19 @@ button a {
 }
 
 .menu_items button {
-    background-color: #333;
-    color: white;
-    border: none;
     padding: 5px 10px;
     font-size: 14px;
     cursor: pointer;
 }
 
+/* Login page styling */
 body.login-page {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-  }
+}
 
 .form-container {
     text-align: center;
@@ -147,31 +145,57 @@ body.login-page {
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 300px;
-  }
-  
-  .form-container h2 {
-    margin: 0;
-  }
-  
-  .form-container p {
-    margin: 10px 0;
-  }
+}
 
-  .form-container input{
+.form-container h2 {
+    margin: 0;
+}
+
+.form-container p {
+    margin: 10px 0;
+}
+
+.form-container input {
     padding-bottom: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
-  }
-  
-  #loginForm {
+}
+
+/* Login page styling */
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('C:/xampp/htdocs/Chef60Foods-main/chef60/assets/img/Homebg.jpg'); /* Update the path accordingly */
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white overlay */
+}
+
+.form-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for the background of the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+
+
+#loginForm {
     display: flex;
     flex-direction: column;
-  }
-  
-  #loginButton {
-    margin-top: 10px;
-  }
+}
 
+#loginButton {
+    margin-top: 10px;
+}
+
+/* Reservation page styling */
 .reservation-container {
     max-width: 400px;
     margin: 20px auto;
@@ -209,15 +233,14 @@ body.login-page {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    /**/
     background: linear-gradient(90deg, #ff8800, #ffaa00);
     color: white;
-    padding: 15px 30px;
     font-size: 18px;
     margin-top: 10px;
-    cursor: pointer;
-    transition: background 5s;
+    transition: background 0.5s;
 }
 
+/* Change button background on hover */
 .reservation-container button[type="submit"]:hover {
-    background: linear-gradient(90deg, #ffaa00, #ffcc00);}
+    background: linear-gradient(90deg, #ffaa00, #ffcc00);
+}

@@ -33,10 +33,10 @@
         </ul>
     </nav>
 </header>
-<body>
+<body >
     
     <div class="logo">
-        <img src="" alt="">
+        <img src="C:\xampp\htdocs\Chef60Foods-main\chef60\assets\img\logo2.png" alt="">
     </div>
     <div class="home_text">
         <h2>Chef60 Foods</h2>
