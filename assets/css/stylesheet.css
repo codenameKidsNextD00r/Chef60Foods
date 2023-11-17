@@ -1,0 +1,256 @@
+/* Reset default styles and set global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation bar styling */
+.nav {
+    background-color: #333;
+    color: white;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Logo styling */
+.logo img {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Home text styling */
+.home_text {
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.home_text h2 {
+    font-size: 24px;
+}
+
+.home_text p {
+    font-size: 16px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* Button styling */
+button, .menu_items button, .reservation-container button[type="submit"] {
+    background-color: #e68608;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover, .menu_items button:hover, .reservation-container button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* About section styling */
+.about_text {
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.about_text h2 {
+    font-size: 24px;
+}
+
+.about_text p {
+    font-size: 16px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* Menu section styling */
+
+.menu_wrapper, .menu_text {
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.menu_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.menu_items .item1,
+.menu_items .item2,
+.menu_items .item3,
+.menu_items .item4 {
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu_items h3 {
+    margin-top: 0;
+}
+
+.menu_items p {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.menu_items button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Login page styling */
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.form-container h2 {
+    margin: 0;
+}
+
+.form-container p {
+    margin: 10px 0;
+}
+
+.form-container input {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Login page styling */
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('C:/xampp/htdocs/Chef60Foods-main/chef60/assets/img/Homebg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.form-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for the background of the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#loginButton {
+    margin-top: 10px;
+}
+
+/* Reservation page styling */
+
+.reservation-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #b3afaf;
+    border-radius: 5px;
+    text-align: left;
+    
+}
+
+.reservation-container label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.reservation-container input[type="date"],
+.reservation-container input[type="time"],
+.reservation-container input[type="number"],
+.reservation-container textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reservation-container textarea {
+    height: 80px;
+}
+
+.reservation-container button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff8800, #ffaa00);
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background 0.5s;
+    
+}
+.reservationlogo img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Change button background on hover */
+.reservation-container button[type="submit"]:hover {
+    background: linear-gradient(90deg, #ffaa00, #ffcc00);
+}
